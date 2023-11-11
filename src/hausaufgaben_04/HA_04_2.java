@@ -2,18 +2,20 @@ package hausaufgaben_04;
 
 public class HA_04_2 {
     public static void main(String[] args) {
-        char ch1 = 66;
-        System.out.println("'" + ch1 + "'" + " ASCII result - 66" );
+        char ch1 = 'A';
+        int ascii1 = ch1;
+        System.out.println("'" + ch1 + "'" + " result - " + ascii1);
 
-        char ch2 = 67;
-        System.out.println("'" + ch2 + "'" + " ASCII result - 67" );
+        char ch2 = 'b';
+        int ascii2 = ch2;
+        System.out.println("'" + ch2 + "'" + "  result - " + ascii2 );
 
-        char ch3 = 68;
-        System.out.println("'" + ch3 + "'" + " ASCII result - 68" );
+        char ch3 = '%';
+        int ascii3 = ch3;
+        System.out.println("'" + ch3 + "'" + " result - " + ascii3);
+
+        char ch4 = '6';
+        int ascii4 = ch4;
+        System.out.println("'" + ch4 + "'" + " result - " + ascii4);
     }
 }
-/*
- вопрос - а можно в джаве сделать наоборот -
- вводишь число, которое соответствует символу, а на экран выводится сам символ?
- конвертировать int в char?
- */
