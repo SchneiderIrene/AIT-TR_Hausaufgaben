@@ -11,6 +11,14 @@ public class HA_04_3 {
 
 //        a = a+b - (b=a);
 
+/*
+        int c=a;
+        a=b;
+        b=c;
+
+ */
+
+
         System.out.println(a);
         System.out.println(b);
 
