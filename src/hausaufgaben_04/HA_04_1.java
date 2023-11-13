@@ -10,7 +10,7 @@ public class HA_04_1 {
         String name = scanner.nextLine();
         System.out.println("Enter your surname");
         String surname = scanner.nextLine();
-        System.out.println("EInter your age");
+        System.out.println("Enter your age");
         int age = scanner.nextInt();
 
         System.out.println("First name: " + name);

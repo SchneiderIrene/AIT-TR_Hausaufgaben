@@ -8,7 +8,7 @@ public class HA_04_2 {
 
         char ch2 = 'b';
         int ascii2 = ch2;
-        System.out.println("'" + ch2 + "'" + "  result - " + ascii2 );
+        System.out.println("'" + ch2 + "'" + " result - " + ascii2 );
 
         char ch3 = '%';
         int ascii3 = ch3;

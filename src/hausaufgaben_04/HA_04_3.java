@@ -9,8 +9,11 @@ public class HA_04_3 {
     b = a-b;
     a = a-b;
 
+//        a = a+b - (b=a);
 
         System.out.println(a);
         System.out.println(b);
+
+
     }
 }
