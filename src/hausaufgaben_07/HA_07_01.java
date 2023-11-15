@@ -1,4 +1,4 @@
-package hausafgaben_07;
+package hausaufgaben_07;
 
 import java.util.Scanner;
 
@@ -16,6 +16,10 @@ public class HA_07_01 {
         System.out.println("Enter second number");
         int b = scannerI.nextInt();
 
+//        if (b==0 && sign=="/"){
+//            System.out.println("You can not divide by 0!!!");
+//        }
+
         switch (sign){
             case "-":
                 System.out.println(a-b);
@@ -30,7 +34,12 @@ public class HA_07_01 {
                 break;
 
             case "/":
-                System.out.println(a/b);
+                if(b==0){
+                    System.out.println("You can not divide by 0!!!");
+                } else {
+                    System.out.println(a/b);
+                }
+
                 break;
 
             case "%":
