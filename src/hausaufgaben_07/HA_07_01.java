@@ -16,9 +16,6 @@ public class HA_07_01 {
         System.out.println("Enter second number");
         int b = scannerI.nextInt();
 
-//        if (b==0 && sign=="/"){
-//            System.out.println("You can not divide by 0!!!");
-//        }
 
         switch (sign){
             case "-":
