@@ -3,7 +3,7 @@ package hausaufgaben_09;
 public class HA_09_01 {
     public static void main(String[] args) {
 
-    int a = 77;
+    int a = - 0;
         System.out.println(a + numberTest(a));
     }
 
