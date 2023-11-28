@@ -8,7 +8,7 @@ public class HA_13_03 {
     static int min = arr [0];
     public static int findMin(int[] ints){
 
-        for (int i = 0; i < ints.length; i++){
+        for (int i = 1; i < ints.length; i++){
             if(ints[i] < min) {
                 min = ints[i];
             }
