@@ -1,4 +1,4 @@
-package hausaugaben_13;
+package hausaufgaben_13;
 
 public class HA_13_01 {
     public static void main(String[] args) {
