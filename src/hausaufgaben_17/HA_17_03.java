@@ -4,6 +4,7 @@ public class HA_17_03 {
     public static void main(String[] args) {
         String string = "Hello";
         System.out.println(mySubstring(string, 1, 3));
+        System.out.println(mySubstring2(string, 1, 3));
     }
 
 
@@ -14,6 +15,14 @@ public class HA_17_03 {
             if (i >= begin && i < end) {
                 substr += chars[i];
             }
+        }
+        return substr;
+    }
+    public static String mySubstring2(String string, int begin, int end) {
+        char[] chars = string.toCharArray();
+        String substr = "";
+        for (int i = begin; i < chars.length && i < end; i++) {
+                substr += chars[i];
         }
         return substr;
     }
