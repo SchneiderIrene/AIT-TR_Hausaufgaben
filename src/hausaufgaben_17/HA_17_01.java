@@ -6,9 +6,9 @@ public class HA_17_01 {
     public static void main(String[] args) {
         String string1 = "mamamoetramu";
         String string2 = "ramumoetmamy";
-        System.out.println(anagramm(string1, string2));
+        System.out.println(anagram(string1, string2));
     }
-    public static boolean anagramm(String string1, String string2) {
+    public static boolean anagram(String string1, String string2) {
         char[] arr1 = string1.toCharArray();
         Arrays.sort(arr1);
         System.out.println(Arrays.toString(arr1));
