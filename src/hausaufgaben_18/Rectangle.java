@@ -10,12 +10,10 @@ public class Rectangle {
     }
 
     public  int square (){
-        int square = length*width;
-        return square;
+        return length*width;
     }
 
     public  int perimeter (){
-        int perimeter = length*2 + width*2;
-        return perimeter;
+        return length*2 + width*2;
     }
 }
