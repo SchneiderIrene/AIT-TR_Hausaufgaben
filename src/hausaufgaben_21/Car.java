@@ -3,24 +3,24 @@ package hausaufgaben_21;
 import java.util.Arrays;
 
 public class Car {
-  String [] carToFind;
+  String [] salon;
 
-    public Car(String [] carToFind) {
-        this.carToFind = carToFind;
+    public Car(String [] salon) {
+        this.salon = salon;
     }
 
     public String toString() {
         return "Car" +
-                "carToFind=" + Arrays.toString(carToFind);
+                "carToFind=" + Arrays.toString(salon);
     }
 
-    public  void findCar(String order) {
-        for (String c: carToFind){
-            if (c.indexOf(order) >=0){
+    public  void findCar(String carToFind) {
+        for (String c: salon){
+            if (c.indexOf(carToFind) >=0){
                 System.out.println("Эта машина имеется в наличии");
                 return;
             }
         }
-        System.out.println("Такой машины нет , возьмите " + Arrays.toString(carToFind));
+        System.out.println("Такой машины нет , возьмите " + Arrays.toString(salon));
     }
 }
