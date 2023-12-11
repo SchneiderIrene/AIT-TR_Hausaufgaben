@@ -21,6 +21,10 @@ public class Car {
                 return;
             }
         }
-        System.out.println("Такой машины нет , возьмите " + Arrays.toString(salon));
+        System.out.print("Такой машины нет , возьмите ");
+        for (String c: salon){
+            System.out.print(c + ", ");
+        }
+        System.out.println();
     }
 }
