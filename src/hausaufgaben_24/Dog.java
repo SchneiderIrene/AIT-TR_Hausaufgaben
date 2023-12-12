@@ -1,4 +1,4 @@
-package hausaufgaben_23;
+package hausaufgaben_24;
 
 public class Dog extends Pets{
     String name;
