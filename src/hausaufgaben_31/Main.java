@@ -18,8 +18,18 @@ public class Main {
         System.out.println("-----------------------------------------");
 
         Shape[]shapes = {circle1, circle2, rectangle1, rectangle2};
-        System.out.println("General area of all shapes is " + Shape.genArea(shapes));
+        System.out.println("General area of all shapes is " + genArea(shapes));
+
+
     }
+    static double genArea(Shape[] shapes){
+        double genAr = 0;
+        for (Shape shape : shapes) {
+            genAr += shape.area();
+        }
+        return genAr;
+    }
+
 
 
 }
