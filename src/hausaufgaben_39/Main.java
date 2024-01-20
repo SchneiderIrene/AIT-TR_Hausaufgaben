@@ -1,6 +1,5 @@
 package hausaufgaben_39;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
