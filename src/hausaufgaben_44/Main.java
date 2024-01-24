@@ -1,9 +1,6 @@
 package hausaufgaben_44;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,10 +28,13 @@ public class Main {
 
     public static void writePerson (File file, List<Person> personList){
 
-        try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file))){
+        try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
+        BufferedWriter bufferedWriter1 = new BufferedWriter(new OutputStreamWriter(System.out))){
             for (Person person: personList){
                 bufferedWriter.write(person.getName() + ": " + person.getAge());
+                bufferedWriter1.write(person.getName() + ": " + person.getAge());
                 bufferedWriter.newLine();
+                bufferedWriter1.newLine();
             }
         }
         catch (IOException e){
