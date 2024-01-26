@@ -17,6 +17,7 @@ public class Main {
         personList.add(new Person("Bill", 37, new Address("Street", 5)));
         personList.add(new Person("Benn", 31, new Address("Street", 6)));
 
+
         System.out.println(personList);
         System.out.println("-----------------------");
         printAddress(personList);
@@ -26,6 +27,7 @@ public class Main {
     public static void printAddress (List<Person>list){
         list.stream()
                 .filter(a -> a.getAge()>17)
-                .forEach(a -> System.out.println(a.getAddress()));
+                .map(person -> person.getName() + ", " + person.getAge() + ": " + person.getAddress())
+                .forEach(System.out::println);
     }
 }
