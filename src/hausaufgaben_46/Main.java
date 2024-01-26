@@ -2,6 +2,7 @@ package hausaufgaben_46;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,14 +21,14 @@ public class Main {
 
         System.out.println(personList);
         System.out.println("-----------------------");
-        printAddress(personList);
+        System.out.println(printAddress(personList));
 
     }
 
-    public static void printAddress (List<Person>list){
-        list.stream()
+    public static List <String> printAddress (List<Person>list){
+      return list.stream()
                 .filter(a -> a.getAge()>17)
                 .map(person -> person.getName() + ", " + person.getAge() + ": " + person.getAddress())
-                .forEach(System.out::println);
+                .collect(Collectors.toList()).reversed();
     }
 }
