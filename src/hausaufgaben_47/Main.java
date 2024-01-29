@@ -18,6 +18,12 @@ public class Main {
         personList.add(new Person("Jorg", 32));
 
         System.out.println(findListPersonByAge(personList));
+        findListPersonByAge(personList).forEach((k,v) -> System.out.println(k + " -> " + v
+                .stream()
+                .map(Person::getName)
+                .toList()));
+
+
         System.out.println(sumAge(personList));
         System.out.println(sumAge2(personList));
         System.out.println(namesOlder18(personList));
@@ -54,10 +60,20 @@ public class Main {
     public static int sumAge2(List<Person> personList) {
 
         return personList.stream()
+                .filter(age -> age.getAge() > 18)
                 .map(Person::getAge)
-                .filter(age -> age > 18)
-                .reduce(Integer::sum)
+                .reduce(0, Integer::sum);
+
+    }
+
+    public static int sumAge3(List<Person> personList) {
+
+        return personList.stream()
+                .filter(age -> age.getAge() > 18)
+                .map(Person::getAge)
+                .reduce( Integer::sum)
                 .get();
+
     }
 
     public static String namesOlder18(List<Person> personList) {
